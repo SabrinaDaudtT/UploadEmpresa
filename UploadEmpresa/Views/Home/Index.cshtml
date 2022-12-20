@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h6 class="display-4">Consulta Empresas</h6>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>CNPJ: </label>
+            <div class="input-group">
+                <input type="text" class="form-control w-75" id="iptCNPJ" name="iptCNPJ" placeholder="99.999.999/9999-99" maxlength="18" />
+            </div>
+        </div>
+    </div>
+    </div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <button class="btn btn-primary" type="submit" id="btnPesquisar">
+            Pesquisar
+        </button>
+        <button class="btn btn btn-secondary" type="submit" id="btnLimparCampos">
+            Limpar Campos
+        </button>
+    </div>  
+</div>
+
+<div id="dvDetailsModal" aria-labelledby="TituloModalCentralizado" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" />
+
+@section scripts
+{
+<script src="~/js/PesquisaEmpresa.js"></script>
+}
